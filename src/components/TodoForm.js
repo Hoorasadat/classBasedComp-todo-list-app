@@ -22,6 +22,7 @@ class TodoForm extends Component {
   };
 
   handleInputChange = (event) => {
+    this.setState({ errors: [] });
     const { value } = event.target;
     this.setState({ task: value });
   };
